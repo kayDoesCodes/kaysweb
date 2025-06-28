@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-one: #16697a;
+  --color-two: #489fb5;
+  --color-three: #82c0cc;
+  --color-four: #ede7e3;
+  --color-five: #ffa62b;
+  --color-six: #ff331f;
+  --color-seven: #184e77;
+  --color-eight: #1e6091;
+  --color-nine: #1a759f;
+  --color-ten: #00296b;
+  --color-eleven: #003f88;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 100;
+  padding: 2vmin;
+  backdrop-filter: blur(45%);
+  background-color: var(--color-two);
+}
+
+.nav h1{
+  font-size: 4vmin;
+  padding: 2vmin;
+  color: var(--color-four);
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav a{
+  font-size: 2vmin;
+  color: black;
+  text-decoration: none;
+  padding: 2vmin;
+  color: var(--color-four);
+  background-color: var(--color-one);
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.nav a:hover{
+  scale: 1.1;
+  box-shadow: 10px 3px 4px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero .hero-img{
+  width: 900px;
+  object-fit: cover;
+  position: absolute;
+  top: 70px;
+  right: -100px;
+  z-index: -1;
+}
+
+.hero h2{
+  font-size: 6vmin;
+  font-family: "Shadows Into Light", cursive;
+  color: var(--color-one);
+}
+
+.hero p{
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-one);
+  margin-top: 10px;
+  line-height: 35px;
+}
+
+.hero span{
+  color: var(--color-six);
+}
+
+.hero .amaze{
+  font-size: 4vmin;
+}
+
+.id .catch{
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.hero .git, .hero .x{
+  width: 40px;
+}
+
+.hero button{
+  background-color: var(--color-six);
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 15%;
+  cursor: pointer;
+}
+
+.hero button:hover{
+  background-color: var(--color-four);
+  transition: all 0.3s ease-in-out;
+}
+
+.circle{
+  background-color: rgba(255, 0, 0, 0.26);
+  padding: 100px;
+  position: absolute;
+  top: -50px;
+  left: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-two{
+  background-color: rgba(255, 255, 0, 0.863);
+  padding: 100px;
+  position: absolute;
+  top: 200px;
+  left: -100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-three{
+  background-color: rgba(255, 68, 0, 0.651);
+  padding: 100px;
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.triangle{
+  background-color: rgba(0, 255, 234, 0.363);
+  padding: 100px;
+  position: absolute;
+  top: 300px;
+  right: 800px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  rotate: 20deg;
+  z-index: -1;
+}
+
+.shape-two{
+  background-color: var(--color-one);
+  padding: 20px;
+  z-index: -1;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  position: absolute;
+  top: 200px;
+  left: 450px;
+}
+
+.shape-two-1{
+  background-color: var(--color-one);
+  padding: 20px;
+  z-index: -1;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  position: absolute;
+  top: 200px;
+  left: 485px;
+}
+
+.shape-three{
+  background-color: rgb(192, 192, 192);
+  height: 200px;
+  width: 300px;
+  z-index: -15;
+  clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+  position: absolute;
+  top: 130px;
+  left: 900px;
+}
+
+.cam-hole{
+  background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+  padding: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  right: 280px;
+  z-index: -10;
+}
+
+@media screen and (max-width: 1024px){
+  .hero .hero-img{
+    width: 760px;
+    object-fit: cover;
+    position: absolute;
+    top: 570px;
+    right: -35px;
+  }
+
+  .triangle{
+    background-color: rgba(0, 255, 234, 0.363);
+    padding: 100px;
+    position: absolute;
+    top: 300px;
+    right: 85px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    rotate: 20deg;
+    z-index: -1;
+  }
+  .shape-three{
+    background-color: rgb(192, 192, 192);
+    height: 200px;
+    width: 300px;
+    z-index: -15;
+    clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+    position: absolute;
+    top: 620px;
+    left: 300px;
+  }
+
+  .cam-hole{
+    background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+    padding: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 660px;
+    right: 180px;
+    z-index: -10;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .hero .hero-img{
+    width: 760px;
+    object-fit: cover;
+    position: absolute;
+    top: 570px;
+    right: -35px;
+  }
+
+  .triangle{
+    background-color: rgba(0, 255, 234, 0.363);
+    padding: 100px;
+    position: absolute;
+    top: 300px;
+    right: 85px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    rotate: 20deg;
+    z-index: -1;
+  }
+  .shape-three{
+    background-color: rgb(192, 192, 192);
+    height: 200px;
+    width: 300px;
+    z-index: -15;
+    clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+    position: absolute;
+    top: 620px;
+    left: 300px;
+  }
+
+  .cam-hole{
+    background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+    padding: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 660px;
+    right: 180px;
+    z-index: -10;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .hero .hero-img{
+    width: 760px;
+    object-fit: cover;
+    position: absolute;
+    top: 570px;
+    right: -35px;
+  }
+
+  .triangle{
+    background-color: rgba(0, 255, 234, 0.363);
+    padding: 100px;
+    position: absolute;
+    top: 300px;
+    right: 85px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    rotate: 20deg;
+    z-index: -1;
+  }
+  .shape-three{
+    background-color: rgb(192, 192, 192);
+    height: 200px;
+    width: 300px;
+    z-index: -15;
+    clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+    position: absolute;
+    top: 620px;
+    left: 300px;
+  }
+
+  .cam-hole{
+    background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+    padding: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 660px;
+    right: 180px;
+    z-index: -10;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hero .hero-img{
+    width: 760px;
+    object-fit: cover;
+    position: absolute;
+    top: 570px;
+    right: -35px;
+  }
+
+  .triangle{
+    background-color: rgba(0, 255, 234, 0.363);
+    padding: 100px;
+    position: absolute;
+    top: 300px;
+    right: 85px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    rotate: 20deg;
+    z-index: -1;
+  }
+  .shape-three{
+    background-color: rgb(192, 192, 192);
+    height: 200px;
+    width: 300px;
+    z-index: -15;
+    clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+    position: absolute;
+    top: 620px;
+    left: 300px;
+  }
+
+  .cam-hole{
+    background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+    padding: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 660px;
+    right: 180px;
+    z-index: -10;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .hero .hero-img{
+    width: 430px;
+    object-fit: cover;
+    position: absolute;
+    top: 640px;
+    right: -20px;
+  }
+
+  .hero p{
+    line-height: 25px;
+  }
+
+  .triangle{
+    background-color: rgba(0, 255, 234, 0.363);
+    padding: 100px;
+    position: absolute;
+    top: 300px;
+    right: 85px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    rotate: 20deg;
+    z-index: -1;
+  }
+  .shape-three{
+    background-color: rgb(192, 192, 192);
+    height: 200px;
+    width: 300px;
+    z-index: -15;
+    clip-path: path("M 10,40 70,40 80,30 80,10 90,0 140,0 150,10 250,10 260,20 260,140 260,150 10,150 0,150 0,50 Z");
+    position: absolute;
+    top: 620px;
+    left: 300px;
+  }
+
+  .cam-hole{
+    background: repeating-radial-gradient(black 50px, white 50px 100px, black 100px 150px);
+    padding: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 660px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  .shape-two{
+    background-color: var(--color-one);
+    padding: 10px;
+    z-index: -1;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    position: absolute;
+    top: 200px;
+    left: 500px;
+  }
+
+  .shape-two-1{
+    background-color: var(--color-one);
+    padding: 10px;
+    z-index: -1;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    position: absolute;
+    top: 200px;
+    right: -100px;
+  }
+
+  .move{
+    position: absolute;
+    top: -78px;
+    left: -230px;
+  }
+}
